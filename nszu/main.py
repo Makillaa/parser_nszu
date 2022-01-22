@@ -116,7 +116,7 @@ def main():
 
 # Метод, в которой выбираем интервал запуска программы и в бесконечном цикле запускаем постоянный процесс
 def scheduler():
-    schedule.every().day.at("01:21").do(db_option)
+    schedule.every().day.at("00:00").do(db_option)
 
     while True:
         schedule.run_pending()
